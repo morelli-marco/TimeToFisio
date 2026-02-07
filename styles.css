@@ -1,6 +1,6 @@
 :root {
     --bg: #5F2A77;
-    --card: #f4f4f4;
+    --card: #ffffff;
     --muted: #5d5c5c;
     --accent: #6babb5;
     /* verde salvia */
@@ -50,11 +50,15 @@ body {
     padding: 16px 0;
 }
 
+
+
 .brand {
     display: flex;
     gap: 12px;
     align-items: center
 }
+
+
 
 .brand .logo {
     width: 56px;
@@ -109,7 +113,7 @@ body {
 
 .hero-text p {
     margin: 0 0 18px;
-    color: var(--muted)
+    color: var(--text)
 }
 
 .btn {
@@ -322,4 +326,9 @@ body {
     .nav {
         display: none
     }
+}
+
+.imgLogo {
+    width: 100px;
+    height: auto;
 }
