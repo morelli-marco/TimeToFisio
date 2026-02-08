@@ -2,7 +2,7 @@
     --bg: #5F2A77;
     --card: #ffffff;
     --muted: #5d5c5c;
-    --accent: #6babb5;
+    --accent: #FFD773;
     /* verde salvia */
     --accent-dark: #6f8a70;
     --text: #151515;
@@ -118,7 +118,7 @@ body {
 
 .btn {
     display: inline-block;
-    background: var(--accent);
+    background: var(--);
     color: white;
     padding: 12px 18px;
     border-radius: 10px;
