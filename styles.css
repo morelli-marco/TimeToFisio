@@ -7,7 +7,7 @@
     --accent-dark: #6f8a70;
     --text: #151515;
     --radius: 14px;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-family: "Funnel Display", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 * {
@@ -329,6 +329,6 @@ body {
 }
 
 .imgLogo {
-    width: 100px;
+    width: 160px;
     height: auto;
 }
