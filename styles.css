@@ -187,6 +187,9 @@ body {
     margin-bottom: 15px;
 }
 
+.img-riccardo {
+    object-position: 50% 40%; 
+}
 .contact-card-container {
     display: flex;
     justify-content: center;
