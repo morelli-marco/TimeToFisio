@@ -1,8 +1,10 @@
 :root {
-    --purple: #8C52FF;
+    --purple: #f6eaf9;
+    --violet: #8c52ff;
     --white: #ffffff;
     --muted: #5d5c5c;
-    --accent: #FFD773;
+    --accent: #8c52ff;
+    /*--accent: #FFD773;*/
     --text_white: #ffffff;
     --text_black: #000000;
     --radius: 14px;
@@ -20,6 +22,10 @@ body {
     line-height: 1.5;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
+}
+
+h3 {
+    color: var(--violet);
 }
 
 .container {
@@ -64,7 +70,7 @@ body {
 .hero {
     padding: 60px 0;
     background: var(--purple);
-    color: var(--text_white);
+    color: var(--text_black);
 }
 
 .hero-inner {
@@ -77,6 +83,7 @@ body {
 .hero-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: var(--violet);
 }
 
 .hero-image img {
@@ -88,7 +95,7 @@ body {
 .btn {
     display: inline-block;
     background: var(--accent);
-    color: var(--text_black);
+    color: var(--text_white);
     padding: 14px 24px;
     border-radius: 10px;
     text-decoration: none;
@@ -108,7 +115,7 @@ body {
 }
 
 .pale {
-    background: #f8f7f5;
+    background: var(--white);
 }
 
 .section-title {
@@ -143,13 +150,13 @@ body {
 }
 
 .service h4 {
-    color: var(--purple);
+    color: var(--violet);
     margin-bottom: 10px;
 }
 
 .service.card {
     background: var(--purple);
-    color: var(--text_white);
+    color: var(--text_black);
     padding: 30px;
     border-radius: var(--radius);
 }
@@ -167,7 +174,7 @@ body {
 
 .card.person {
     background: var(--purple);
-    color: var(--text_white);
+    color: var(--text_black);
     padding: 25px;
     border-radius: var(--radius);
     flex: 1;
@@ -201,7 +208,7 @@ body {
     width: 100%;
     text-align: center;
     background: var(--purple);
-    color: var(--text_white);
+    color: var(--text_black);
     padding: 40px;
     border-radius: var(--radius);
 }
@@ -293,5 +300,42 @@ body {
 
     .hero-text h2 {
         font-size: 2rem;
+    }
+}
+
+/* Specifichiamo le regole per la griglia della missione */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; /* Più spazio tra le card per dare respiro */
+}
+
+.mission-item {
+    background: var(--white);
+    padding: 30px 25px;
+    border-radius: 0 var(--radius) var(--radius) 0; /* Arrotonda solo i bordi destri */
+    border-left: 6px solid var(--violet); /* Il bordo statico viola */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Ombra leggerissima per profondità */
+}
+
+.mission-item h4 {
+    color: var(--violet);
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.mission-item p {
+    margin: 0;
+    color: var(--text_black);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive: una colonna su dispositivi mobili */
+@media (max-width: 768px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
     }
 }
