@@ -339,3 +339,20 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 900px) {
+    /* ... altre regole esistenti ... */
+
+    .card.person p {
+        text-align: left; /* Cambia da justify a left per una lettura più naturale */
+        hyphens: auto;
+    }
+}
+
+.person .muted {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: left; /* Forza l'allineamento a sinistra */
+    hyphens: none;    /* Evita che "muscoloscheletrica" venga divisa da trattini */
+}
